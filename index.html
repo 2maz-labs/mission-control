@@ -317,6 +317,10 @@
             </div>
         </header>
 
+        <div id="error-banner" style="display: none; background: var(--accent-red); color: white; padding: 12px 24px; margin-bottom: 24px; border-radius: 8px; text-align: center;">
+            <span id="error-message">Loading error</span>
+        </div>
+
         <div class="alert-banner" id="action-required">
             <div class="alert-header">
                 <span>🚨</span>
@@ -412,18 +416,32 @@
         }
 
         async function fetchData() {
+            console.log('Fetching data from:', CONFIG.DATA_URL);
             try {
                 const cacheBuster = `?_=${Date.now()}`;
-                const response = await fetch(CONFIG.DATA_URL + cacheBuster);
-                if (!response.ok) throw new Error('Failed to fetch');
+                const response = await fetch(CONFIG.DATA_URL + cacheBuster, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json',
+                    },
+                    mode: 'cors'
+                });
+                console.log('Response status:', response.status);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
                 const data = await response.json();
+                console.log('Data loaded:', data);
                 lastUpdateTime = new Date(data.lastUpdated || Date.now());
                 renderDashboard(data);
                 document.getElementById('main-content').classList.add('flash-update');
                 setTimeout(() => document.getElementById('main-content').classList.remove('flash-update'), 1000);
+                document.getElementById('error-banner').style.display = 'none';
                 return true;
             } catch (err) {
                 console.error('Failed to fetch dashboard data:', err);
+                document.getElementById('error-message').textContent = `Error: ${err.message}`;
+                document.getElementById('error-banner').style.display = 'block';
                 return false;
             }
         }
