@@ -1,1 +1,103 @@
-{"lastUpdated":"2026-03-01T18:56:00Z","actionRequired":[],"activeNow":[],"products":[],"crons":[],"recentActivity":[{"time":"2026-03-01T18:56:00Z","event":"🚀 Mission Control Dashboard initialized"}]}
+{
+  "lastUpdated": "2026-03-01T21:09:00Z",
+  "actionRequired": [],
+  "activeNow": [
+    {
+      "task": "AI OS fully operational",
+      "model": "Kimi K2.5",
+      "startedAt": "2026-03-01T21:09:00Z"
+    }
+  ],
+  "products": [
+    {
+      "name": "2maz CEO",
+      "url": "https://t.me/labs_2maz",
+      "status": "live",
+      "lastChecked": "2026-03-01T21:09:00Z"
+    },
+    {
+      "name": "Voice (ElevenLabs)",
+      "url": "telegram",
+      "status": "live",
+      "lastChecked": "2026-03-01T21:09:00Z"
+    },
+    {
+      "name": "ARIA (Meta Ads)",
+      "url": "https://business.facebook.com",
+      "status": "live",
+      "lastChecked": "2026-03-01T21:09:00Z"
+    },
+    {
+      "name": "SCOUT (Content)",
+      "url": "internal",
+      "status": "live",
+      "lastChecked": "2026-03-01T21:09:00Z"
+    },
+    {
+      "name": "Trading Council",
+      "url": "paper-trading",
+      "status": "testing",
+      "lastChecked": "2026-03-01T21:09:00Z"
+    },
+    {
+      "name": "Dev Team",
+      "url": "skills-installed",
+      "status": "live",
+      "lastChecked": "2026-03-01T21:09:00Z"
+    },
+    {
+      "name": "GENESIS",
+      "url": "active",
+      "status": "live",
+      "lastChecked": "2026-03-01T21:09:00Z"
+    }
+  ],
+  "crons": [
+    {
+      "name": "SCOUT Morning Briefing",
+      "schedule": "07:00 CET daily",
+      "lastRun": "2026-03-01T07:00:00Z",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "ARIA Daily Report",
+      "schedule": "09:00 CET daily",
+      "lastRun": "pending",
+      "status": "paused",
+      "errors": 0,
+      "lastError": null
+    },
+    {
+      "name": "Trading Council Daily Scan",
+      "schedule": "08:00 CET daily",
+      "lastRun": "pending",
+      "status": "ok",
+      "errors": 0,
+      "lastError": null
+    }
+  ],
+  "recentActivity": [
+    {
+      "time": "2026-03-01T21:09:00Z",
+      "event": "✅ AI OS fully operational - 10 agents active"
+    },
+    {
+      "time": "2026-03-01T21:07:00Z",
+      "event": "✅ ARIA connected to Meta Ads API"
+    },
+    {
+      "time": "2026-03-01T20:48:00Z",
+      "event": "✅ GENESIS SaaS Creator deployed"
+    },
+    {
+      "time": "2026-03-01T20:45:00Z",
+      "event": "✅ Dev Team (PIXEL, FORGE, SHIP) ready"
+    },
+    {
+      "time": "2026-03-01T20:04:00Z",
+      "event": "✅ Trading Council (PROFESSOR, BROKER, ANALYST) in paper mode"
+    }
+  ]
+}
