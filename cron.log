@@ -1,2 +1,8 @@
 On branch main
 nothing to commit, working tree clean
+remote: Internal Server Error        
+remote: Request ID D0FF:2468D3:501D00:4A3D0C:69A9D329        
+remote: Time 2026-03-05T19:02:01Z
+To https://github.com/2maz-labs/mission-control.git
+ ! [remote rejected] main -> main (Internal Server Error)
+error: failed to push some refs to 'https://github.com/2maz-labs/mission-control.git'
